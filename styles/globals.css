@@ -1,6 +1,7 @@
 html,
 body {
   padding: 0;
+  background-color: #000814;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -11,6 +12,67 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+header {
+  width: 100%;
+  padding: 0 10px 0 10px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 20px;
+}
+ul {
+  margin-left: -100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.user-card {
+  height: 250px;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid teal;
+  margin: 5px;
+}
+.img {
+  border-radius: 50%;
+}
+.details {
+  margin-left: 7%;
+}
+.male {
+  border: 2px solid greenyellow;
+}
+.female {
+  border: 2px solid pink;
+}
+.btn {
+  margin-bottom: 2%;
+}
+button {
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #fea920;
+  height: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
